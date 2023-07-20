@@ -7,7 +7,12 @@ let imgbox = document.querySelector('.imgbox');
 let h6 = document.querySelector('h6');
 
 function genQr(){
-    qrImg.src = url + inputBox.value;
-    imgbox.classList.add('showImg');
-    h6.innerText = inputBox.value;
+
+    if(inputBox.value === ''){
+        alert('Please input text or url')
+    }else{
+        qrImg.src = url + inputBox.value;
+        imgbox.classList.add('showImg');
+        h6.innerText = inputBox.value;
+    }
 }

@@ -79,3 +79,7 @@ h6 {
   font-size: 15px;
   padding-bottom: 15px;
 }
+
+.error{
+  animation: inputShake 1000ms;
+}
