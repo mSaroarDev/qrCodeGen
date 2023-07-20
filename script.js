@@ -8,11 +8,15 @@ let h6 = document.querySelector('h6');
 
 function genQr(){
 
-    if(inputBox.value === ''){
-        alert('Please input text or url')
-    }else{
+    if(inputBox.value !== ''){
         qrImg.src = url + inputBox.value;
         imgbox.classList.add('showImg');
-        h6.innerText = inputBox.value;
+        inputBox.style.marginBottom = '0px';
+    }else{
+        inputBox.classList.add('error');
+        inputBox.placeholder = 'Please input some text or url';
+        setTimeout(()=>{
+            inputBox.classList.remove('error')
+        }, 1000);
     }
 }

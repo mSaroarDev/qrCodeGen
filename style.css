@@ -22,7 +22,6 @@ body {
   padding: 40px;
   width: 300px;
   border-radius: 10px;
-  gap: 10px;
 }
 
 .box h1 {
@@ -38,6 +37,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .box button {
@@ -74,12 +74,6 @@ img {
   outline: 1px solid #ccc;
 }
 
-h6 {
-  display: inline-block;
-  font-size: 15px;
-  padding-bottom: 15px;
-}
-
 .error {
   animation: inputShake 0.1s linear 10;
   border: 1px solid red;
@@ -95,7 +89,10 @@ h6 {
   50% {
     transform: translateX(0);
   }
-  100% {
+  75% {
     transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
